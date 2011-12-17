@@ -1,0 +1,40 @@
+<h1>Listing products</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Image url</th>
+    <th>Link url</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.name %></td>
+    <td><%= product.category %></td>
+    <td><%= product.description %></td>
+    <td><%= product.image_url %></td>
+    <td><%= product.link_url %></td>
+    <td><%= product.price %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td><%= link_to 'Edit', edit_product_path(product) %></td>
+    <td><%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<% form_tag products_path, :method => 'get' do %>
+    <p>
+    <%= text_field_tag :search_query,params[:search_query] %>
+    <%= submit_tag "Search", :name => nil %>
+    </p>
+<% end %>
+
+<br />
+
+<%= link_to 'New Product', new_product_path %>
