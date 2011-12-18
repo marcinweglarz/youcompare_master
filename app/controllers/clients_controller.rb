@@ -6,7 +6,7 @@ class ClientsController < ApplicationController
   def create
     @client = Client.new(params[:client])
     if @client.save
-      redirect_to products_path, :notice => 'Client creation successful!'
+      redirect_to products_path, :notice => 'Client registered successful!'
     else
       render :action => 'new'
     end

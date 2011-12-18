@@ -1,9 +1,5 @@
 Youcompare::Application.routes.draw do
-  resources :subscriptions
 
-  resources :package_of_products
-
-  resources :package_of_products
 
   get "clients/new"
 
@@ -11,6 +7,8 @@ Youcompare::Application.routes.draw do
 
   resources :products
   resources :clients
+  resources :subscriptions
+  resources :package_of_products
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -63,7 +61,7 @@ Youcompare::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => "welcome", :action => "home"
     get "welcome/thank_you"
-    get "welcome/register"
+
 
 
   # See how all your routes lay out with "rake routes"
