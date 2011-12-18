@@ -1,6 +1,8 @@
 Youcompare::Application.routes.draw do
   resources :package_of_products
 
+  resources :package_of_products
+
   get "clients/new"
 
   get "welcome/home"
