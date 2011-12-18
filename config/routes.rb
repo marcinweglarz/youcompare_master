@@ -1,4 +1,10 @@
 Youcompare::Application.routes.draw do
+  resources :subscriptions
+
+  resources :package_of_products
+
+  resources :package_of_products
+
   get "clients/new"
 
   get "welcome/home"
@@ -58,6 +64,7 @@ Youcompare::Application.routes.draw do
   root :to => "welcome", :action => "home"
     get "welcome/thank_you"
     get "welcome/register"
+
 
   # See how all your routes lay out with "rake routes"
 
