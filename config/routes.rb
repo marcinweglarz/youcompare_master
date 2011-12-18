@@ -1,4 +1,6 @@
 Youcompare::Application.routes.draw do
+  resources :subscriptions
+
   resources :package_of_products
 
   resources :package_of_products
