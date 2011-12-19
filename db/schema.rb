@@ -11,15 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111218222839) do
+ActiveRecord::Schema.define(:version => 20111219074742) do
+
+  create_table "ads", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.decimal  "price"
+    t.date     "purchased_date"
+    t.date     "expiry_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "clients", :force => true do |t|
-    t.string   "name"
-    t.text     "address"
-    t.integer  "telephone"
-    t.integer  "fax"
     t.string   "email"
-    t.string   "password"
+    t.string   "hashed_password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

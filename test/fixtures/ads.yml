@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  price: 9.99
+  purchased_date: 2011-12-19
+  expiry_date: 2011-12-19
+
+two:
+  name: MyString
+  description: MyText
+  price: 9.99
+  purchased_date: 2011-12-19
+  expiry_date: 2011-12-19

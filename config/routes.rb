@@ -1,6 +1,8 @@
 Youcompare::Application.routes.draw do
 
 
+
+
   get "clients/new"
 
   get "welcome/home"
@@ -9,6 +11,8 @@ Youcompare::Application.routes.draw do
   resources :clients
   resources :subscriptions
   resources :package_of_products
+  resources :ads
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @ad.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @ad.description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @ad.price %>
+</p>
+
+<p>
+  <b>Purchased date:</b>
+  <%= @ad.purchased_date %>
+</p>
+
+<p>
+  <b>Expiry date:</b>
+  <%= @ad.expiry_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>
