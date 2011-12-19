@@ -25,6 +25,11 @@ ActiveRecord::Schema.define(:version => 20111218222839) do
   end
 
   create_table "package_of_products", :force => true do |t|
+    t.string   "name",           :null => false
+    t.text     "description"
+    t.decimal  "price"
+    t.date     "purchased_date"
+    t.date     "expiry_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -42,6 +47,11 @@ ActiveRecord::Schema.define(:version => 20111218222839) do
   end
 
   create_table "subscriptions", :force => true do |t|
+    t.string   "name",           :null => false
+    t.text     "description"
+    t.decimal  "price"
+    t.date     "purchased_date"
+    t.date     "expiry_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
