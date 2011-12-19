@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(:version => 20111219074742) do
   end
 
   create_table "clients", :force => true do |t|
+    t.string   "name"
+    t.text     "address"
+    t.integer  "telephone"
+    t.integer  "fax"
     t.string   "email"
     t.string   "hashed_password"
     t.datetime "created_at"
@@ -46,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20111219074742) do
     t.text     "description"
     t.string   "image_url"
     t.string   "link_url"
-    t.decimal  "price",       :precision => 8, :scale => 2
+    t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "client_id"
