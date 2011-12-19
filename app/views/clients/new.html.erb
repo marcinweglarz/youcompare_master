@@ -1,4 +1,4 @@
-<h1>Create Client</h1>
+<h1>Register a new Client</h1>
 
 <% form_for (@client) do |f| %>
 <% if @client.errors.any? %>
@@ -6,14 +6,31 @@
   <h2><%= pluralize(@client.errors.count, "error")%>prohibited this client from being saved:</h2>
   <ul>
   <% @client.errors.full_messages.each do |msg| %>
-    <li><%= msg%></li>
+    <li><%= msg %></li>
   <% end %>
   </ul>
 </div>
 <% end %>
 
 <div class="field">
-   <%= f.label :email %><br />
+  <%= f.label :name%><br />
+  <%= f.text_field :name %>
+</div>
+<div class="field">
+  <%= f.label :address %><br />
+  <%= f.text_area :address, :rows => 3, :cols => 40  %>
+</div>
+<div class="field">
+  <%= f.label :telephone %><br />
+  <%= f.text_field :telephone %>
+</div>
+<div class="field">
+  <%= f.label :fax %><br />
+  <%= f.text_field :fax %>
+</div>
+
+<div class="field">
+  <%= f.label :email %><br />
   <%= f.text_field :email %>
 </div>
 <div class="field">
@@ -21,7 +38,7 @@
   <%= f.password_field :password %>
 </div>
 <div class="actions">
-  <%= f.submit "Create Client" %>
+  <%= f.submit "Register" %>
 </div>
 <% end %>
 
