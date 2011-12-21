@@ -12,6 +12,7 @@ Youcompare::Application.routes.draw do
   resources :subscriptions
   resources :package_of_products
   resources :ads
+  resources :sessions
 
 
   # The priority is based upon order of creation:
@@ -65,6 +66,8 @@ Youcompare::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => "welcome", :action => "home"
     get "welcome/thank_you"
+  match '/login' => "sessions#new", :as => "login"
+  match '/logout' => "sessions#destroy", :as => "logout"
 
 
 
