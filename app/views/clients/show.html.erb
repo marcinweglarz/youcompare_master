@@ -1,1 +1,38 @@
 <p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @client.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @client.address %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @client.telephone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @client.fax %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @client.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @client.password %>
+</p>
+
+<p>Press a button below to have a look on our services</p>
+
+    <!-- put a link_to here to view our services_controller!!!--> <br/>
+<br />
+
+<%= link_to 'Back', products_path %>
