@@ -4,7 +4,7 @@
 <p> Please also note that your registration is subject to the Administrator acceptance and you will be notified by e-mail
   about the process result in the next 24 hours.</p>
 
-<% form_for (@client) do |f| %>
+<%= form_for (@client) do |f| %>
 <% if @client.errors.any? %>
 <div id="errorExplanation">
   <h2><%= pluralize(@client.errors.count, "error")%>prohibited this client from being saved:</h2>
