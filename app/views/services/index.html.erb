@@ -1,0 +1,31 @@
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<% @ads.each do |ad| %>
+    <div id="ads">
+      <%= ad.name %>
+      <%= sanitize(ad.description) %>
+      <%= ad.price %>
+    </div>
+<% end %>
+
+
+
+<% @packages_of_products.each do |pop| %>
+    <div id="pop">
+      <%= pop.name %>
+      <%= sanitize(pop.description) %>
+      <%= pop.price %>
+    </div>
+<% end %>
+
+<% @subscription.each do |subscription| %>
+    <div id="subscription">
+      <%= subscription.name %>
+      <%= sanitize(subscription.description) %>
+      <%= subscription.price %>
+    </div>
+<% end %>
+
+
