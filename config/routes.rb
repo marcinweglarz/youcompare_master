@@ -3,7 +3,9 @@ Youcompare::Application.routes.draw do
 
 
 
-  get "services/services"
+  get "services/index"
+
+
 
   get "clients/new"
 
