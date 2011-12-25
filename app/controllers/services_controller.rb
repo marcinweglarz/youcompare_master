@@ -5,7 +5,6 @@ class ServicesController < ApplicationController
     @subscription = Subscription.all
   end
 
-  def services
-  end
+
 
 end
