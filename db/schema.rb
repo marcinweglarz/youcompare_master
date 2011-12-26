@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20111221233407) do
     t.text     "description"
     t.string   "image_url"
     t.string   "link_url"
-    t.decimal  "price"
+    t.decimal  "price",       :precision => 8, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "client_id"

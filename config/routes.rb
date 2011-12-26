@@ -3,7 +3,9 @@ Youcompare::Application.routes.draw do
 
 
 
-  get "services/index"
+
+
+
 
 
 
@@ -17,7 +19,19 @@ Youcompare::Application.routes.draw do
   resources :package_of_products
   resources :ads
   resources :sessions
+
+  get "services/index"
+  get "services/ads"
+  get "services/subscriptions"
+  get "services/package_of_products"
+
   resources :services
+    resources :services do
+    resources :ads
+    resources :subscriptions
+    resources :package_of_products
+
+  end
 
 
   # The priority is based upon order of creation:
