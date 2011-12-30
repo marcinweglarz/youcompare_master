@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111221233407) do
+ActiveRecord::Schema.define(:version => 20111230215940) do
 
-  create_table "ads", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.decimal  "price"
-    t.date     "purchased_date"
-    t.date     "expiry_date"
+  create_table "adverts", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "carts", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,12 +34,14 @@ ActiveRecord::Schema.define(:version => 20111221233407) do
     t.datetime "updated_at"
   end
 
+  create_table "line_items", :force => true do |t|
+    t.integer  "service_id"
+    t.integer  "cart_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "package_of_products", :force => true do |t|
-    t.string   "name",           :null => false
-    t.text     "description"
-    t.decimal  "price"
-    t.date     "purchased_date"
-    t.date     "expiry_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,10 +52,19 @@ ActiveRecord::Schema.define(:version => 20111221233407) do
     t.text     "description"
     t.string   "image_url"
     t.string   "link_url"
-    t.decimal  "price",       :precision => 8, :scale => 2
+    t.decimal  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "client_id"
+  end
+
+  create_table "services", :force => true do |t|
+    t.string   "type"
+    t.string   "name"
+    t.text     "description"
+    t.decimal  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "sessions", :force => true do |t|
@@ -67,11 +78,6 @@ ActiveRecord::Schema.define(:version => 20111221233407) do
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "subscriptions", :force => true do |t|
-    t.string   "name",           :null => false
-    t.text     "description"
-    t.decimal  "price"
-    t.date     "purchased_date"
-    t.date     "expiry_date"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

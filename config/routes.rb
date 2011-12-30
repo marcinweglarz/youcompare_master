@@ -9,29 +9,28 @@ Youcompare::Application.routes.draw do
 
 
 
+  resources :line_items
+
+  resources :carts
+
+  get "store/index"
+
+  resources :services
+
   get "clients/new"
 
   get "welcome/home"
 
   resources :products
   resources :clients
-  resources :subscriptions
-  resources :package_of_products
-  resources :ads
+
   resources :sessions
+  resources :stores
 
-  get "services/index"
-  get "services/ads"
-  get "services/subscriptions"
-  get "services/package_of_products"
 
-  resources :services
-    resources :services do
-    resources :ads
-    resources :subscriptions
-    resources :package_of_products
 
-  end
+
+
 
 
   # The priority is based upon order of creation:
