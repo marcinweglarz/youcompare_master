@@ -548,7 +548,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="shoping cart and services" />
+    <option name="LAST_COMMIT_MESSAGE" value="shoping cart and services part 2&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -574,6 +574,7 @@
     <MESSAGE value="services update working no database" />
     <MESSAGE value="STI" />
     <MESSAGE value="shoping cart and services" />
+    <MESSAGE value="shoping cart and services part 2&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
