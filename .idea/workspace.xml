@@ -2,93 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db2fdb8f-ec80-49a9-b320-1afa7171311f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/carts_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/line_items_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/store_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/carts_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/line_items_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/store_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/advert.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/cart.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/line_item.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/service.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/carts/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/carts/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/carts/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/carts/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/carts/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/line_items/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/line_items/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/line_items/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/line_items/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/line_items/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/services/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/services/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/services/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/store/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20111229214726_create_services.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20111229222109_create_carts.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20111229222446_create_line_items.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20111230215940_create_adverts.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/carts.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/line_items.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/services.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/carts_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/line_items_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/functional/store_controller_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/advert_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/carts_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/line_items_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/helpers/store_helper_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/line_item_test.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/unit/service_test.rb" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\controllers\ads_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\controllers\package_of_products_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\controllers\subscriptions_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\helpers\ads_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\helpers\package_of_products_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\helpers\subscriptions_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\models\ad.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\ads\edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\ads\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\ads\new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\ads\show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\package_of_products\_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\package_of_products\edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\package_of_products\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\package_of_products\new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\package_of_products\show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\services\ads.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\services\package_of_products.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\services\subscriptions.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\subscriptions\_form.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\subscriptions\edit.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\subscriptions\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\subscriptions\new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\app\views\subscriptions\show.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\db\migrate\20111219074742_create_ads.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\test\functional\ads_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\test\functional\package_of_products_controller_test.rb" afterPath="" />
-      <change type="DELETED" beforePath="D:\RAILS_WF\work_files_014\test\functional\subscriptions_controller_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/youcompare.iml" afterPath="$PROJECT_DIR$/.idea/youcompare.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/services_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/services_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/advert.rb" afterPath="$PROJECT_DIR$/app/models/advert.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/package_of_product.rb" afterPath="$PROJECT_DIR$/app/models/package_of_product.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/service.rb" afterPath="$PROJECT_DIR$/app/models/service.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/subscription.rb" afterPath="$PROJECT_DIR$/app/models/subscription.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/services/index.html.erb" afterPath="$PROJECT_DIR$/app/views/services/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/package_of_products.yml" afterPath="$PROJECT_DIR$/test/fixtures/package_of_products.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/subscriptions.yml" afterPath="$PROJECT_DIR$/test/fixtures/subscriptions.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/functional/services_controller_test.rb" afterPath="$PROJECT_DIR$/test/functional/services_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/package_of_product_test.rb" afterPath="$PROJECT_DIR$/test/unit/package_of_product_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/unit/subscription_test.rb" afterPath="$PROJECT_DIR$/test/unit/subscription_test.rb" />
-      <change type="MOVED" beforePath="D:\RAILS_WF\work_files_014\app\views\ads\_form.html.erb" afterPath="$PROJECT_DIR$/app/views/services/_form.html.erb" />
-      <change type="MOVED" beforePath="D:\RAILS_WF\work_files_014\db\migrate\20111218221257_create_package_of_products.rb" afterPath="$PROJECT_DIR$/db/migrate/20111230215116_create_package_of_products.rb" />
-      <change type="MOVED" beforePath="D:\RAILS_WF\work_files_014\db\migrate\20111218222839_create_subscriptions.rb" afterPath="$PROJECT_DIR$/db/migrate/20111230215337_create_subscriptions.rb" />
-      <change type="MOVED" beforePath="D:\RAILS_WF\work_files_014\test\fixtures\ads.yml" afterPath="$PROJECT_DIR$/test/fixtures/adverts.yml" />
-      <change type="MOVED" beforePath="D:\RAILS_WF\work_files_014\test\unit\ad_test.rb" afterPath="$PROJECT_DIR$/test/unit/cart_test.rb" />
     </list>
     <ignored path="youcompare.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -115,19 +38,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="service.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/service.rb">
+      <file leaf-file-name="20111229214726_create_services.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20111229214726_create_services.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20111230215940_create_adverts.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20111230215940_create_adverts.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="178" selection-end="178" vertical-scroll-proportion="0.5543478">
+            <state line="4" column="24" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,18 +50,25 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="47" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1325288001027" expanded="true" signature="615:740" placeholder="do ... end" />
-              </folding>
+            <state line="62" column="9" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subscription.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="service.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/service.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="subscription.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/subscription.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.18478261">
               <folding />
             </state>
           </provider>
@@ -156,7 +77,7 @@
       <file leaf-file-name="package_of_product.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/package_of_product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+            <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -165,7 +86,7 @@
       <file leaf-file-name="advert.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/advert.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+            <state line="5" column="3" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,12 +122,12 @@
         <option value="$PROJECT_DIR$/db/migrate/20111229214726_create_services.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20111230215337_create_subscriptions.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20111230215116_create_package_of_products.rb" />
-        <option value="$PROJECT_DIR$/app/models/subscription.rb" />
-        <option value="$PROJECT_DIR$/app/models/package_of_product.rb" />
-        <option value="$PROJECT_DIR$/app/models/advert.rb" />
-        <option value="$PROJECT_DIR$/app/models/service.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20111230215940_create_adverts.rb" />
+        <option value="$PROJECT_DIR$/app/models/advert.rb" />
+        <option value="$PROJECT_DIR$/app/models/package_of_product.rb" />
+        <option value="$PROJECT_DIR$/app/models/service.rb" />
+        <option value="$PROJECT_DIR$/app/models/subscription.rb" />
       </list>
     </option>
   </component>
@@ -237,7 +158,6 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="Favorites" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -268,24 +188,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youcompare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work_files_014" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,6 +305,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -686,22 +589,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297953" sideWeight="0.67154473" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284553" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40788475" sideWeight="0.67154473" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42304775" sideWeight="0.67154473" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279396" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279396" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -761,33 +664,19 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/cart.rb">
+    <entry file="file://$PROJECT_DIR$/test/unit/package_of_product_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="78" selection-end="78" vertical-scroll-proportion="0.02982456" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/line_item.rb">
+    <entry file="file://$PROJECT_DIR$/test/unit/subscription_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="57" selection-end="57" vertical-scroll-proportion="0.02982456" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/line_items_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111229222446_create_line_items.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="33" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/services_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/carts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="233" selection-end="233" vertical-scroll-proportion="0.5467836">
-          <folding />
-        </state>
+        <state line="3" column="22" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20111229222109_create_carts.rb">
@@ -795,74 +684,72 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111229222446_create_line_items.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111230215337_create_subscriptions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="22" selection-start="120" selection-end="120" vertical-scroll-proportion="0.14571428">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111230215940_create_adverts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111215224958_create_products.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111216215102_create_clients.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111216235500_rename_password_to_hashed_password.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20111221233407_add_sessions_table.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20111229214726_create_services.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="22" selection-start="185" selection-end="185" vertical-scroll-proportion="0.2951807">
+        <state line="4" column="24" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="9" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111230215337_create_subscriptions.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/advert.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.13858695">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111230215116_create_package_of_products.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="36" selection-start="133" selection-end="133" vertical-scroll-proportion="0.13858695">
+        <state line="5" column="3" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/package_of_product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/subscription.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0">
+        <state line="5" column="3" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/service.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0">
+        <state line="10" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/subscription.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1325288001027" expanded="true" signature="615:740" placeholder="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/advert.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111230215940_create_adverts.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="178" selection-end="178" vertical-scroll-proportion="0.5543478">
+        <state line="4" column="0" selection-start="50" selection-end="50" vertical-scroll-proportion="0.18478261">
           <folding />
         </state>
       </provider>
