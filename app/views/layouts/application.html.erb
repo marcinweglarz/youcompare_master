@@ -12,7 +12,7 @@
 <%= link_to "Product Catalogue", products_path %> |
 <%= link_to "Leave Site", :controller => "welcome", :action => "thank_you" %>  |
 <%= link_to "Register", new_client_path %> |
-
+<%= link_to "Your Cart", :controller => "carts", :action => "your_cart"  %>
 
 <div id='header'>
   <% if logged_in? %>

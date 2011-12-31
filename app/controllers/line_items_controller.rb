@@ -42,7 +42,8 @@ class LineItemsController < ApplicationController
   def create
       @cart = current_cart
       service = Service.find(params[:service_id])
-      @line_item = @cart.line_items.new(:service => service)
+      #@line_item = @cart.line_items.new(:service => service)
+      @line_item = @cart.add_service(service)
 
     respond_to do |format|
       if @line_item.save

@@ -13,7 +13,7 @@ class ServicesController < ApplicationController
   # GET /services/1
   # GET /services/1.xml
   def show
-    @service = Service.find(params[:id])
+    @service = Service.find(params[:type])
 
     respond_to do |format|
       format.html # show.html.erb

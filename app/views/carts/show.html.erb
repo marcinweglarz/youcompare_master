@@ -1,11 +1,13 @@
+
+
 <p id="notice"><%= notice %></p>
-<h2> Cart</h2>
+
+<h2>Your Cart</h2>
 <ul>
-  <% @cart.line_items.each do|item| %>
-  <li><%= item.service.name %></li>
-      <% end %>
+  <% for item in @cart.line_items %>
+      <li><%= item.quantity %> &times; <%= item.service.name %></li>
+  <% end %>
 </ul>
 
 
-<%= link_to 'Edit', edit_cart_path(@cart) %> |
-<%= link_to 'Back', carts_path %>
+<%= link_to 'Back', store_url %>
