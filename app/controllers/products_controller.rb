@@ -42,7 +42,7 @@ class ProductsController < ApplicationController
   # POST /products
   # POST /products.xml
   def create
-     @product = current.client.products.new(params[:product])
+     @product = current_client.products.new(params[:product])
 
     respond_to do |format|
       if @product.save

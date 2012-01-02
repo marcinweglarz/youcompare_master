@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111231162238) do
+ActiveRecord::Schema.define(:version => 20120102232906) do
 
   create_table "adverts", :force => true do |t|
     t.datetime "created_at"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20111231162238) do
     t.string   "hashed_password"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "salt"
   end
 
   create_table "line_items", :force => true do |t|
@@ -53,7 +54,7 @@ ActiveRecord::Schema.define(:version => 20111231162238) do
     t.text     "description"
     t.string   "image_url"
     t.string   "link_url"
-    t.decimal  "price"
+    t.decimal  "price",       :precision => 8, :scale => 2
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "client_id"

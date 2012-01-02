@@ -12,7 +12,7 @@
 
 <p>
   <b>Description:</b>
-  <%= @product.description %>
+  <%= sanitize(auto_link @product.description) %>
 </p>
 
 <p>

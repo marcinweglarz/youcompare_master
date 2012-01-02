@@ -8,6 +8,8 @@ class Product < ActiveRecord::Base
       :message => 'must be a URL for GIF, JPG or PNG image.'
   }
 
+  attr_accessible :name, :category, :description, :image_url, :link_url, :price
+
   def self.search(search_query)
     if search_query
       find(:all, :conditions => ['name LIKE ?', "%#{search_query}%"])

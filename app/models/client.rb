@@ -23,17 +23,25 @@ class Client < ActiveRecord::Base
     return client if client && client.authenticated?(password)
   end
 
-  def authenticated?(password)
-    self.hashed_password == encrypt(password)
+   def authenticated?(password)
+    self.hashed_password == encrypt(password + "ruby_rocks" + self.salt)
   end
 
   protected
   def encrypt_password
     return if password.blank?
-    self.hashed_password = encrypt(password)
+    salt = generate_salt
+    self.hashed_password = encrypt(password + "ruby_rocks" + salt)
   end
 
   def encrypt(string)
-     Digest::SHA1.hexdigest(string)
+    Digest::SHA1.hexdigest(string)
+  end
+
+  def generate_salt
+    chars = ("a".."z").to_a + ("A".."Z").to_a + ("0".."9").to_a
+    salt = ""
+    1.upto(10) { |i| salt << chars[rand(chars.size-1)] }
+    self.salt = salt
   end
 end
