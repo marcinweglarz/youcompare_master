@@ -15,6 +15,7 @@ Youcompare::Application.routes.draw do
   resources :carts
 
 
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -69,6 +70,7 @@ Youcompare::Application.routes.draw do
   match '/your_cart' => "carts#your_cart", :as => "your_cart"
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
+  match '/store' =>"store#index", :as=>"store"
 
 
   # See how all your routes lay out with "rake routes"

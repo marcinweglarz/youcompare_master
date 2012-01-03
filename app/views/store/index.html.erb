@@ -1,16 +1,16 @@
 
-<% if notice %>
+
 <p id="notice" ><%= notice %></p>
-<% end %>
+
 
 <h1> Your Services</h1>
 <% @services.each do |service|%>
 <div class ="entry">
-  <h2><% service.type %></h2>
+  <h2><%= service.type %></h2>
   <%= sanitize(service.description) %>
 
     <div id="price">
-      <span id="spice_l"><%=service.price %></span>
+      <span id="spice_l"> <%= number_to_currency( service.price, :unit => '&euro;') %><br/></span>
       <%= button_to "Add to cart", line_items_path(:service_id => service) %>
     </div>
       </div>
