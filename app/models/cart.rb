@@ -1,4 +1,5 @@
 class Cart < ActiveRecord::Base
+  belongs_to :client
   has_many :line_items, :dependent => :destroy
   def add_service(service)
       current_item = line_items.where(:service_id => service.id).first

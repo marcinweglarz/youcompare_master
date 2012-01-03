@@ -1,5 +1,9 @@
 class SessionsController < ApplicationController
-   def create
+def new
+
+end
+
+  def create
     if client = Client.authenticate(params[:email], params[:password])
       session[:client_id] = client.id
       redirect_to root_path, :notice => "Logged in successfully"

@@ -1,8 +1,3 @@
-#class Subscription < ActiveRecord::Base
-#
-#
-#end
-
 class Subscription < Service
-
+default_scope :order => 'name'
 end

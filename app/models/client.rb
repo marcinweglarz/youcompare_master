@@ -1,8 +1,10 @@
 require 'digest'
 class Client < ActiveRecord::Base
-  has_many :products
+   has_many :products
+   has_many :carts
   attr_accessor :password
   before_save :encrypt_password
+
 
   validates :name, :address, :telephone, :fax, :presence => true
   validates :name, :uniqueness => true

@@ -1,0 +1,16 @@
+<h1> Our Package of Products</h1>
+<br/>
+<% @package_of_product.each do |service|%>
+<div class ="entry">
+  <h2><%= service.name %></h2>
+  <%= sanitize(service.description) %>
+
+    <div id="price">
+      <span id="spice_l"> <%= number_to_currency( service.price, :unit => '&euro;') %><br/></span>
+      <%= button_to "Add to cart", line_items_path(:service_id => service) %>
+
+    </div>
+      </div>
+<% end %>
+                <br/>
+          <%= link_to "Back to Store", store_path %>

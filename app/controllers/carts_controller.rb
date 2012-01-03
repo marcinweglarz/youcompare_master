@@ -20,6 +20,9 @@ class CartsController < ApplicationController
       format.xml { render :xml => @cart }
     end
   end
+   def your_cart
+    redirect_to :action => "show", :id => current_cart.id
+  end
 
   # GET /carts/new
   # GET /carts/new.xml
@@ -80,4 +83,6 @@ class CartsController < ApplicationController
       format.xml { head :ok }
     end
   end
+
+
 end

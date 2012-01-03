@@ -3,15 +3,22 @@
 <p id="notice" ><%= notice %></p>
 
 
-<h1> Your Services</h1>
-<% @services.each do |service|%>
-<div class ="entry">
-  <h2><%= service.type %></h2>
-  <%= sanitize(service.description) %>
+<h1> Our Services</h1>
+<br/>
+<div id="advert">
+     <p> Advertise with Us</p>
+    <%= link_to 'Adverts',advert_path %>
+<br/>
+</div>
 
-    <div id="price">
-      <span id="spice_l"> <%= number_to_currency( service.price, :unit => '&euro;') %><br/></span>
-      <%= button_to "Add to cart", line_items_path(:service_id => service) %>
-    </div>
-      </div>
-<% end %>
+<div id="subscriptions">
+  <p>Our Subscription options</p>
+<%= link_to 'Subscriptions', subscription_path %>
+ </div>
+
+
+<div id="package">
+  <p> Packages of Product for every one</p>
+<%= link_to 'Package of Products', package_of_product_path%>
+</div>
+

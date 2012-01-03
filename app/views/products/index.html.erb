@@ -21,7 +21,7 @@
     <td><%= product.description %></td>
     <td><%= product.image_url %></td>
     <td><%= product.link_url %></td>
-    <td><%= product.price %></td>
+    <td><%= number_to_currency(product.price, :unit =>'&euro;') %></td>
     <td><%= product.client_id %></td>
     <td><%= link_to 'Show', product %></td>
     <td><%= link_to 'Edit', edit_product_path(product) %></td>

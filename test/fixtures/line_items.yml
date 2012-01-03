@@ -1,9 +1,17 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
+#one:
+#  service_id: 1
+#  cart_id: 1
+#
+#two:
+#  service_id: 1
+#  cart_id: 1
+
 one:
-  service_id: 1
-  cart_id: 1
+  service: ruby
+  cart: one
 
 two:
-  service_id: 1
-  cart_id: 1
+  service: ruby
+  cart_id:one
