@@ -1,5 +1,5 @@
 class Service < ActiveRecord::Base
-  has_many:clients
+  has_many :line_items
 
   SERVICE_TYPES =["Advert", "Package of Products", "Subscription"]
 

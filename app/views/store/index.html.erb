@@ -17,8 +17,7 @@
         <td class="bold"><%= service.name %></td>
         <td> <%= sanitize(service.description) %></td>
         <td><%= number_to_currency(service.price, :unit => '&euro;') %>   </td>
-        <td> <%= number_to_currency(service.price, :unit => '&euro;') %></td>
-        <td>      <%= button_to "Add to cart", line_items_path(:service_id => service) %>  </td>
+           <td>      <%= button_to "Add to cart", line_items_path(:service_id => service) %>  </td>
       </tr>
 
   <% end %>

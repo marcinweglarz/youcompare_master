@@ -6,6 +6,10 @@ Youcompare::Application.routes.draw do
 
 
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   get "services/index"
   get "store/index"
   get "clients/new"
@@ -13,7 +17,7 @@ Youcompare::Application.routes.draw do
   get "session/new"
   get "user_product/index"
 
-  resources :services
+  #resources :services       # only for admin
   resources :products
   resources :clients
   resources :sessions
@@ -79,7 +83,8 @@ Youcompare::Application.routes.draw do
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
   match '/store' =>"store#index", :as=>"store"
-  match '/services' => "services#index", :as=>"services"
+  #match '/services' => "services#index", :as=>"services"
+  match '/order' => "welcome#thank_you", :as =>"thank_you"
 
 
 

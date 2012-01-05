@@ -8,8 +8,9 @@ end
       session[:client_id] = client.id
       redirect_to store_path, :notice => "Logged in successfully"
     else
-      flash.now[:alert] = "Invalid login/password combination"
-      render :action => 'new'
+      redirect_to login_url, :alert => "Invalid user/password combination"
+      #flash.new[:alert] = "Invalid login/password combination"
+      #render :action => 'new'
     end
   end
 

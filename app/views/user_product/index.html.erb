@@ -17,10 +17,15 @@
 <p>Note: All product displayed here are added by our valuable Clients - Shops. Please feel free to start browsing them
 or searching for a  particular one you are interested in buying.</p>
 <h3>It is all about the price! Now You can compare it!!!</h3><br/>
+    <% form_tag user_product_path, :method => 'get' do %>
+        <p>
+        <%= text_field_tag :search_query,params[:search_query] %>
+        <%= submit_tag "Search", :name => nil %>
+        </p>
 
 <% @products.each do |product| %>
     <div class="entry">
-      <% image_tag(product.image_url) %>
+      <%= image_tag(product.image_url) %>
       <h3><%= product.name %></h3>
       <h3><%= product.category %></h3>
       <%= sanitize(product.description) %>
@@ -29,4 +34,9 @@ or searching for a  particular one you are interested in buying.</p>
       </div>
       <%= sanitize auto_link_urls(product.link_url) %>
     </div>
+
+
+    <% end %>
+
 <% end %>
+

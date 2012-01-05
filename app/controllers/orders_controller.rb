@@ -1,13 +1,16 @@
 class OrdersController < ApplicationController
+   before_filter :authenticate, :except => [:index, :show,:create]
   # GET /orders
   # GET /orders.xml
   def index
     @orders = Order.all
 
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml { render :xml => @orders }
     end
+    @cart =current_cart
   end
 
   # GET /orders/1
@@ -34,7 +37,7 @@ class OrdersController < ApplicationController
   def new
     @cart = current_cart
     if @cart.line_items.empty?
-      redirect_to store_url, notice: "Your cart is empty"
+      redirect_to store_url, :notice => "Your cart is empty"
       return
     end
 
@@ -62,7 +65,7 @@ class OrdersController < ApplicationController
       if @order.save
         Cart.destroy(session[:cart_id])
         session[:cart_id]=nil
-        format.html { redirect_to(store_url,:notice => 'Order was successfully created.')}
+        format.html { redirect_to(thank_you_path,:notice => 'Order was successfully created.')}
         format.xml { render :xml => @order, :status => :created, :location => @order }
       else
         format.html { render :action => "new" }

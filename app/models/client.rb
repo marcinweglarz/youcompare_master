@@ -6,6 +6,7 @@ class Client < ActiveRecord::Base
   before_save :encrypt_password
 
 
+
   validates :name, :address, :telephone, :fax, :presence => true
   validates :name, :uniqueness => true
   validates :telephone, :fax, :length => {:within => 11..15}
@@ -46,4 +47,5 @@ class Client < ActiveRecord::Base
     1.upto(10) { |i| salt << chars[rand(chars.size-1)] }
     self.salt = salt
   end
+
 end

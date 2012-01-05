@@ -1,6 +1,14 @@
 <h1>Listing products</h1>
-
+ <br/>
+<% form_tag products_path, :method => 'get' do %>
+    <p>
+    <%= text_field_tag :search_query,params[:search_query] %>
+    <%= submit_tag "Search", :name => nil %>
+    </p>
+<% end %>
+<br/>
 <table>
+  <br/>
   <tr>
     <th>Name</th>
     <th>Category</th>
@@ -19,7 +27,7 @@
     <td><%= product.name %></td>
     <td><%= product.category %></td>
     <td><%= product.description %></td>
-    <td><%= product.image_url %></td>
+    <td><%= image_tag(product.image_url) %></td>
     <td><%= product.link_url %></td>
     <td><%= number_to_currency(product.price, :unit =>'&euro;') %></td>
     <td><%= product.client_id %></td>
@@ -29,13 +37,6 @@
   </tr>
 <% end %>
 </table>
-
-<% form_tag products_path, :method => 'get' do %>
-    <p>
-    <%= text_field_tag :search_query,params[:search_query] %>
-    <%= submit_tag "Search", :name => nil %>
-    </p>
-<% end %>
 
 <br />
 
