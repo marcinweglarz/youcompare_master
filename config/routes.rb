@@ -9,8 +9,9 @@ Youcompare::Application.routes.draw do
   get "services/index"
   get "store/index"
   get "clients/new"
-  get "welcome/home"
+# get "welcome/home"
   get "session/new"
+  get "user_product/index"
 
   resources :services
   resources :products
@@ -74,7 +75,8 @@ Youcompare::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "welcome", :action => "home"
+  # root :to => "welcome", :action => "home"
+  root :to => "user_product#index", :as => "user_product"
   get "welcome/thank_you"
   match '/your_cart' => "carts#your_cart", :as => "your_cart"
   match '/login' => "sessions#new", :as => "login"

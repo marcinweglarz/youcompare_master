@@ -11,7 +11,7 @@ digital camera - five megapixel resolution, 32MB of internal memory, SD slot, 2.
                :image_url => '/images/kitty_camera.jpg', :link_url => 'http://www.engadet.com', :price => 250.00)
 Product.create(:name => 'Men Watch', :category => 'Watches', :description => 'USB Hidden Flash Drive Watch - perfect
 for carrying your data on secret missions, Japanese quartz movement, black polyurethane strap, huge 8GB capacity, dial
-size: 1.1" x 1"(29 x 25mm)', :image_url => '/images/watch.jpg', :link_url => 'http://www.thinkgeek.com', :price => 45.00)
+size: 1.1" x 1"(29 x 25mm)', :image_url => 'watch.jpg', :link_url => 'http://www.thinkgeek.com', :price => 45.00)
 
 Advert.create(:name => 'Main page Banner', :description=> 'Promote your shop on our page. For one month your shop
 will be displayed as the main banner with direct link to your business website on our main page.', :price=>'500.00')
