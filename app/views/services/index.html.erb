@@ -1,9 +1,8 @@
-
-<h1>Listing services</h1>
+<h1>Our Services</h1>
 
 <table>
   <tr>
-    <th>Type</th>
+    <th>Service type</th>
     <th>Name</th>
     <th>Description</th>
     <th>Price</th>
@@ -12,21 +11,19 @@
     <th></th>
   </tr>
 
-<% @services.each do |service| %>
-  <tr>
-    <td><%= service.type %></td>
-    <td><%= service.name %></td>
-    <td><%= service.description %></td>
-    <td><%= service.price %></td>
-    <td><%= link_to 'Show', service %></td>
-    <td><%= link_to 'Edit', edit_service_path(service) %></td>
-    <td><%= link_to 'Destroy', service, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <% @services.each do |service| %>
+      <tr>
+        <td class="bold"><%= service.service_type %></td>
+        <td class="bold"><%= service.name %></td>
+        <td><%= service.description %></td>
+        <td><%= number_to_currency(service.price, :unit => '&euro;') %>   </td>
+        <td><%= link_to 'Show', service %></td>
+        <td><%= link_to 'Edit', edit_service_path(service) %></td>
+        <td><%= link_to 'Destroy', service, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+  <% end %>
 </table>
 
-<br />
+<br/>
 
 <%= link_to 'New Service', new_service_path %>
-
-<!--dziala services_path i services_path(service)-->

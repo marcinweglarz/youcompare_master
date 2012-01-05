@@ -3,6 +3,14 @@ require 'test_helper'
 class ServicesControllerTest < ActionController::TestCase
   setup do
     @service = services(:one)
+    @update = {
+        :service_type => 'Advert',
+        :name => 'Lorem Ipsum',
+        :description => 'Your text coming here',
+        :price => '80'
+
+    }
+
   end
 
   test "should get index" do
@@ -18,7 +26,7 @@ class ServicesControllerTest < ActionController::TestCase
 
   test "should create service" do
     assert_difference('Service.count') do
-      post :create, :service => @service.attributes
+      post :create, :service => @update
     end
 
     assert_redirected_to service_path(assigns(:service))
@@ -35,8 +43,8 @@ class ServicesControllerTest < ActionController::TestCase
   end
 
   test "should update service" do
-    put :update, :id => @service.to_param, :service => @service.attributes
-    assert_redirected_to service_path(assigns(:service))
+    put :update, :id => @service.to_param, :service => @update
+    assert_redirected_to services_path(assigns(:service))
   end
 
   test "should destroy service" do

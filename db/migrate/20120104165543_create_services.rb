@@ -1,10 +1,11 @@
 class CreateServices < ActiveRecord::Migration
   def self.up
     create_table :services do |t|
-      t.string :type
+      t.string :service_type
       t.string :name
       t.text :description
       t.decimal :price
+
       t.timestamps
     end
   end

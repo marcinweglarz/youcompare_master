@@ -13,35 +13,35 @@ Product.create(:name => 'Men Watch', :category => 'Watches', :description => 'US
 for carrying your data on secret missions, Japanese quartz movement, black polyurethane strap, huge 8GB capacity, dial
 size: 1.1" x 1"(29 x 25mm)', :image_url => 'watch.jpg', :link_url => 'http://www.thinkgeek.com', :price => 45.00)
 
-Advert.create(:name => 'Main page Banner', :description=> 'Promote your shop on our page. For one month your shop
+Service.create( :service_type => 'Advert',:name => 'Main page Banner', :description=> 'Promote your shop on our page. For one month your shop
 will be displayed as the main banner with direct link to your business website on our main page.', :price=>'500.00')
 
-Advert.create(:name=>'Sub page Banner', :description=>'Promote your shop on our page. For one month your shop
+Service.create( :service_type => 'Advert',:name=>'Sub page Banner', :description=>'Promote your shop on our page. For one month your shop
 will be displayed as the main banner with direct link to your business website at one of our sub pages.', :price =>'400.00')
 
-Advert.create(:name=>'Highlighted links', :description=>'If you want to be sure that our visitors will notice your product,
+Service.create( :service_type => 'Advert',:name=>'Highlighted links', :description=>'If you want to be sure that our visitors will notice your product,
  you can buy this extra service. Price per product per month.', :price=> '20.00')
 
-Package_of_product.create(:name=>'Limited number of products: Ten', :description=>'With this Package of products you can
+Service.create(:name=>'Limited number of products: Ten', :description=>'With this Package of products you can
 submit up to ten products displayed for one month on our website for the price of 20 Euro. It is less than 2 euro per product.',
 :price=>'20.00')
 
-Package_of_product.create(:name=>'Limited number of products: Twenty', :description=>'With this Package of products you
+Service.create(:name=>'Limited number of products: Twenty', :description=>'With this Package of products you
 can submit up to twenty products displayed for one month on our website for the price of 40 euro. It is less than 2 euro
 per product.', :price=>'40.00')
 
-Package_of_product.create(:name=>'Limited number of products: Thirty', :description=>'With this Package of products you
+Service.create(:name=>'Limited number of products: Thirty', :description=>'With this Package of products you
 can submit up to thirty products displayed for one month on our website for the price of 60 euro. It is less than 2 euro
 per product.', :price=>'20.00')
 
-Subscription.create(:name=>'Monthly Subscription', :description=>'With our Monthly Subscription offer you can place an
+Service.create(:name=>'Monthly Subscription', :description=>'With our Monthly Subscription offer you can place an
 unlimited number of products on our website for a period of one month.', :price=>'80.00')
 
-Subscription.create(:name=>'Three-month Subscription', :description=>'With our Three-month Subscription offer you can place
+Service.create(:name=>'Three-month Subscription', :description=>'With our Three-month Subscription offer you can place
 an unlimited number of products on our website for a period of three months.', :price=>'200.00')
 
-Subscription.create(:name=>'Six-month Subscription', :description=>'With our Six-month Subscription offer you can place
+Service.create(:name=>'Six-month Subscription', :description=>'With our Six-month Subscription offer you can place
 an unlimited number of products on our website for a period of six months.', :price=>'550.00')
 
-Subscription.create(:name=>'Annual Subscription', :description=>'With our Annual Subscription offer you can place an
+Service.create(:name=>'Annual Subscription', :description=>'With our Annual Subscription offer you can place an
 unlimited number of products on our website for a period of one year.', :price=>'1000.00')

@@ -1,24 +1,28 @@
+<h1>Our Services</h1>
+
+<table>
+  <tr>
+    <th>Service type</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @services.each do |service| %>
+      <tr>
+        <td class="bold"><%= service.service_type %></td>
+        <td class="bold"><%= service.name %></td>
+        <td> <%= sanitize(service.description) %></td>
+        <td><%= number_to_currency(service.price, :unit => '&euro;') %>   </td>
+        <td> <%= number_to_currency(service.price, :unit => '&euro;') %></td>
+        <td>      <%= button_to "Add to cart", line_items_path(:service_id => service) %>  </td>
+      </tr>
+
+  <% end %>
+</table>
 
 
-<p id="notice" ><%= notice %></p>
-
-
-<h1> Our Services</h1>
-<br/>
-<div id="advert">
-     <p> Advertise with Us</p>
-    <%= link_to 'Adverts',advert_path %>
-<br/>
-</div>
-
-<div id="subscriptions">
-  <p>Our Subscription options</p>
-<%= link_to 'Subscriptions', subscription_path %>
- </div>
-
-
-<div id="package">
-  <p> Packages of Product for every one</p>
-<%= link_to 'Package of Products', package_of_product_path%>
-</div>
 

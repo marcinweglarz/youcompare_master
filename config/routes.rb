@@ -3,9 +3,9 @@ Youcompare::Application.routes.draw do
 
 
 
-  get "package_of_product/index"
-  get "subscription/index"
-  get "advert/index"
+
+
+
   get "services/index"
   get "store/index"
   get "clients/new"
@@ -20,9 +20,6 @@ Youcompare::Application.routes.draw do
   resources :store
   resources :line_items
   resources :carts
-  resources :advert
-  resources :subscription
-  resources :package_of_product
   resources :orders
 
 
@@ -82,9 +79,8 @@ Youcompare::Application.routes.draw do
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
   match '/store' =>"store#index", :as=>"store"
-  match '/advert'=>"advert#index", :as=>"advert"
-  match '/subscription'=>"subscription#index", :as=>"subscription"
-  match '/package_of_product'=>"package_of_product#index", :as=>"package_of_product"
+  match '/services' => "services#index", :as=>"services"
+
 
 
   # See how all your routes lay out with "rake routes"
