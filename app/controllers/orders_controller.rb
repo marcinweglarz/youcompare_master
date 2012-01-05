@@ -1,3 +1,17 @@
+#
+#
+#@author Andrzej Poniatowski
+#@author Marcin Wenglarz
+#@date 04-01-2012
+#@version  Rev 1
+#@resource Agile Web Development... Sam Ruby... page 146
+#
+#
+
+
+
+
+
 class OrdersController < ApplicationController
    before_filter :authenticate, :except => [:index, :show,:create]
   # GET /orders
@@ -34,7 +48,9 @@ class OrdersController < ApplicationController
   #    format.xml  { render :xml => @order }
   #  end
   #end
-  def new
+
+  # @REF Agile Web Development
+     def new
     @cart = current_cart
     if @cart.line_items.empty?
       redirect_to store_url, :notice => "Your cart is empty"
@@ -57,6 +73,7 @@ class OrdersController < ApplicationController
 
   # POST /orders
   # POST /orders.xml
+   #REF Agile Web Development 154
   def create
     @order = Order.new(params[:order])
     @order.add_line_items_from_cart(current_cart)
@@ -76,6 +93,7 @@ class OrdersController < ApplicationController
 
   # PUT /orders/1
   # PUT /orders/1.xml
+  #REF Agile Web Development 155
   def update
     @order = Order.find(params[:id])
 

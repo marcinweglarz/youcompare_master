@@ -1,3 +1,9 @@
+
+#
+#
+# @resource Laptop shop Tutorial 3  Wesley Gorman
+#
+#
 class LineItem < ActiveRecord::Base
   belongs_to :order
   belongs_to :service

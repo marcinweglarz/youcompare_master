@@ -1,3 +1,11 @@
+#
+#
+# @resource Laptop shop Tutorial 3  Wesley Gorman
+#
+#
+
+
+
 class Cart < ActiveRecord::Base
   belongs_to :client
   has_many :line_items, :dependent => :destroy

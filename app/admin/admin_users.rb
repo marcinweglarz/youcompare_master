@@ -1,5 +1,10 @@
 ActiveAdmin.register AdminUser do
-  ActiveAdmin.register AdminUser do
+#
+#
+# @reference http://net.tutsplus.com/tutorials/ruby/create-beautiful-administration-interfaces-with-active-admin/
+#
+#
+
   index do
     column :email
     column :current_sign_in_at
@@ -8,5 +13,4 @@ ActiveAdmin.register AdminUser do
     default_actions
   end
 end
-  
-end
+

@@ -1,3 +1,8 @@
+#
+#
+  # @resources Agile Web Development... Sam Ruby  page 106
+#
+#
 class LineItemsController < ApplicationController
   # GET /line_items
   # GET /line_items.xml

@@ -1,3 +1,8 @@
+#
+#
+# @reference http://net.tutsplus.com/tutorials/ruby/create-beautiful-administration-interfaces-with-active-admin/
+#
+#
 class AdminUser < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable

@@ -13,11 +13,9 @@ Youcompare::Application.routes.draw do
   get "services/index"
   get "store/index"
   get "clients/new"
-# get "welcome/home"
   get "session/new"
   get "user_product/index"
 
-  #resources :services       # only for admin
   resources :products
   resources :clients
   resources :sessions
@@ -83,7 +81,6 @@ Youcompare::Application.routes.draw do
   match '/login' => "sessions#new", :as => "login"
   match '/logout' => "sessions#destroy", :as => "logout"
   match '/store' =>"store#index", :as=>"store"
-  #match '/services' => "services#index", :as=>"services"
   match '/order' => "welcome#thank_you", :as =>"thank_you"
 
 
