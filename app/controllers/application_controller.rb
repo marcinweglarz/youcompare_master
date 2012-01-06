@@ -2,13 +2,6 @@
 #
 # @resource Laptop shop Tutorial 3  Wesley Gorman
 #
-# def current_cart
-#      Cart.find(session[:cart_id])
-#      rescue ActiveRecord::RecordNotFound
-#      cart = Cart.create
-#      session[:cart_id] = cart.id
-#      cart
-#  end
 #
 #
 
@@ -37,6 +30,8 @@ class ApplicationController < ActionController::Base
   def access_denied
     redirect_to login_path, :notice => "Please log in to continue" and return false
   end
+
+  #Ref @ Agile Web Development
   private
 
     def current_cart

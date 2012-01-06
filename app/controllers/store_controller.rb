@@ -14,6 +14,7 @@ class StoreController < ApplicationController
     @services =Service.all
     @cart = current_cart
 
+
   end
   end
 
