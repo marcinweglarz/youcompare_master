@@ -1,3 +1,7 @@
+
+ #  @reference Laptop_Shop_Tutorial_2 & 5 - Wesley Gorman
+ #  @resource Agile Web Development... Sam Ruby... page 76-78
+ #
 require 'digest'
 class Client < ActiveRecord::Base
    has_many :products

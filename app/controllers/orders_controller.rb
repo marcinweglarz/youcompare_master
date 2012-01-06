@@ -1,7 +1,7 @@
 #
 #
-#@author Andrzej Poniatowski
-#@author Marcin Weglarz
+#@Author Andrzej Poniatowski x11106077
+#@author Marcin Weglarz x11106832
 #@date 04-01-2012
 #@version  Rev 1
 #@resource Agile Web Development... Sam Ruby... page 146

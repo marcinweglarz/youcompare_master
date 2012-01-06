@@ -1,4 +1,8 @@
-class ProductsController < ApplicationController
+
+ #
+ #  @reference Laptop_Shop_Tutorial_2 & 3 Wesley Gorman
+ #
+ class ProductsController < ApplicationController
   before_filter :authenticate, :except => [:index, :show]
 
   # GET /products

@@ -1,3 +1,7 @@
+ #
+ #  @reference Laptop_Shop_Tutorial_2 Wesley Gorman
+ #
+
 class SessionsController < ApplicationController
 def new
 
@@ -16,6 +20,6 @@ end
 
   def destroy
     reset_session
-    redirect_to user_product_path, :notice => "You are successfully logged out"
+    redirect_to user_product_path, :notice => "You successfully logged out"
   end
 end

@@ -5,6 +5,16 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+
+ #  @Version Rev 3
+ #  @Date 04/01/2012
+ #  @author Marcin Weglarz, Student IDx11106832
+ #  @author Andrzej Poniatowski Student Id x11106707
+ #  @reference Laptop_Shop_Tutorial_1 - Wesley Gorman
+ #
+ #
+
 Product.create(:name =>'MacBook Pro', :category =>'Apple Computing', :description =>'The new, faster MacBook Air. Everyone should have a notebook this advanced. And now everyone can.Both the 11- and 13-inch MacBook Air now feature the latest generation of Intel processors, the Core i5 and i7. With speeds up to 1.8GHz and faster memory, the new MacBook Air gains up to 2.5x the processing performance over the previous generation.1 MacBook Air also features the Intel HD Graphics 3000 processor, which includes an on-chip engine for video encoding and decoding. That means you experience video playback and FaceTime calls that are smoother, more responsive and more true to life.',
                :image_url => '/images/macbook.jpg', :link_url =>'http://store.apple.com/ie/browse/home/shop_mac/family/macbook_air', :price =>' 995.00')
 Product.create(:name =>'MacBook Pro', :category =>'Apple Computing', :description =>'The new, faster MacBook Air. Everyone should have a notebook this advanced. And now everyone can.Both the 11- and 13-inch MacBook Air now feature the latest generation of Intel processors, the Core i5 and i7. With speeds up to 1.8GHz and faster memory, the new MacBook Air gains up to 2.5x the processing performance over the previous generation.1 MacBook Air also features the Intel HD Graphics 3000 processor, which includes an on-chip engine for video encoding and decoding. That means you experience video playback and FaceTime calls that are smoother, more responsive and more true to life.',

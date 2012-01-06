@@ -1,8 +1,18 @@
+
+ #  @Version Rev 1
+ #  @Date 21/12/2011
+ #  @author Marcin Weglarz, Student IDx11106832
+ #  @reference Laptop_Shop_Tutorial_2 Wesley Gorman
+ #
+ #
+
 class ClientsController < ApplicationController
+  # @reference Laptop_Shop_Tutorial_2 Wesley Gorman
   def new
     @client = Client.new
   end
 
+  # @reference Laptop_Shop_Tutorial_2 Wesley Gorman
    def show
     @client = Client.find(params[:id])
 
@@ -11,7 +21,7 @@ class ClientsController < ApplicationController
       format.xml { render :xml => @client }
     end
   end
-
+ # @author Marcin Weglarz, Student IDx11106832
   def create
     @client = Client.new(params[:client])
     respond_to do |format|

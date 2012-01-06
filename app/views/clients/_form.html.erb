@@ -1,8 +1,12 @@
+<!--#-->
+<!--#-->
+<!--# @references Laptop_Shop_Tutorial_2 - Wesley Gorman-->
+<!--#-->
+<!--#-->
+
 <h1>Client Registration Form</h1>
 <p> Please fill in the following form. Once you are happy with the details given click the provided <b>Register</b> button
   below to submit them. We will send you a confirmation email automatically.</p>
-<p> Please also note that your registration is subject to the Administrator acceptance and you will be notified by e-mail
-  about the process result in the next 24 hours.</p>
 
 <%= form_for (@client) do |f| %>
 <% if @client.errors.any? %>

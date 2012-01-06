@@ -1,12 +1,10 @@
-#
-#
-# @resource Laptop shop Tutorial 3  Wesley Gorman
-#
-#
-#
 
-
-
+ #  @Version Rev 1
+ #  @Date 21/12/2011
+ #  @author Marcin Weglarz, Student IDx11106832
+ #  @reference Laptop_Shop_Tutorial_2 Wesley Gorman
+ #
+ #
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
