@@ -1,3 +1,12 @@
+<!--#-->
+<!--#  @author Andrzej Poniatowski Student Id x11106077-->
+<!--#  @date 03.01.212-->
+<!--#  @references Agile Web Development... Sam Ruby... page 150-->
+
+
+
+
+
 <%= form_for(@service) do |f| %>
     <% if @service.errors.any? %>
         <div id="error_explanation">
@@ -12,6 +21,9 @@
     <% end %>
 
     <div class="field">
+      <!--#-->
+      <!--#REF-->
+      <!--#-->
       <%= f.select :service_type, Service::SERVICE_TYPES,
                    prompt: 'Select Service Type' %>
 

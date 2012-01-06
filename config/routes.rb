@@ -1,5 +1,14 @@
 Youcompare::Application.routes.draw do
 
+# class Service
+#  @author Andrzej Poniatowski Student Id x11106077
+#  @author Marcin Weglarz     Student Id x11106832
+#  @date 03.01.212
+#  @references Agile Web Development... Sam Ruby... page 90
+#
+#
+#
+#
 
 
 
@@ -9,21 +18,31 @@ Youcompare::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-
+  #
+  #
+  # REF
+  #
+  #
   get "services/index"
   get "store/index"
   get "clients/new"
   get "session/new"
   get "user_product/index"
-
-  resources :products
+  #
+  #
+  #
+  # REF
+  #
+  #
+   resources :products
   resources :clients
   resources :sessions
   resources :store
   resources :line_items
   resources :carts
   resources :orders
-
+  #
+  #
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -75,6 +94,13 @@ Youcompare::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome", :action => "home"
+
+  #
+  #
+  # REF
+  #
+  #
+
   root :to => "user_product#index", :as => "user_product"
   get "welcome/thank_you"
   match '/your_cart' => "carts#your_cart", :as => "your_cart"
@@ -82,7 +108,8 @@ Youcompare::Application.routes.draw do
   match '/logout' => "sessions#destroy", :as => "logout"
   match '/store' =>"store#index", :as=>"store"
   match '/order' => "welcome#thank_you", :as =>"thank_you"
-
+  #
+  #
 
 
   # See how all your routes lay out with "rake routes"

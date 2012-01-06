@@ -1,11 +1,22 @@
+#
+#
+# @reference http://net.tutsplus.com/tutorials/ruby/create-beautiful-administration-interfaces-with-active-admin/
+#
+#
+
+
+
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+#
+# REFERENCE
 gem 'activeadmin'
+#
+#
 gem 'sqlite3'
 
 # Use unicorn as the web server
