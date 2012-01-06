@@ -1,39 +1,41 @@
 <% if notice %>
-<p id="notice"><%= notice %></p>
-<%end%>
+    <p id="notice"><%= notice %></p>
+<% end %>
 
 <h1><b>Welcome to <em>Youcompare</em> - the first products price comparison website</b></h1>
-<br />
+<br/>
 <h3>For our User:</h3>
 <p>We provide a wide range of categorised products that you can browse and compare their prices in many supplying shops.
-  Our suppliers are the companies who make or sell those products. Hopefully you will enjoy our service!</p><br />
+  Our suppliers are the companies who make or sell those products. Hopefully you will enjoy our service!</p><br/>
 <h3>For our potential Client:</h3>
-<p>If you are the shop/company interested in presenting your products here, please click on the <b>Register</b> button above
-  and fill out the form provided with your details and we will come back to you as soon as possible.</p><br />
+<p>If you are the shop/company interested in presenting your products here, please click on the <b>Register</b> button
+  above
+  and fill out the form provided with your details and we will come back to you as soon as possible.</p><br/>
 <p><em>Youcompare</em> Administrator</p>
 <br/>
 <br/>
 <h1>Our Products:</h1>
 <p>Note: All product displayed here are added by our valuable Clients - Shops. Please feel free to start browsing them
-or searching for a  particular one you are interested in buying.</p>
+  or searching for a particular one you are interested in buying.</p>
 <h3>It is all about the price! Now You can compare it!!!</h3><br/>
-    <% form_tag user_product_path, :method => 'get' do %>
-        <p>
-        <%= text_field_tag :search_query,params[:search_query] %>
-        <%= submit_tag "Search", :name => nil %>
-        </p>
+<% form_tag user_product_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search_query, params[:search_query] %>
+      <%= submit_tag "Search", :name => nil %>
+    </p>
 
-<% @products.each do |product| %>
-    <div class="entry">
-      <%= image_tag(product.image_url) %>
-      <h3><%= product.name %></h3>
-      <h3><%= product.category %></h3>
-      <%= sanitize(product.description) %>
-      <div class="price_line">
-        <h4><span class="price"><%= number_to_currency(product.price, :unit =>'&euro;') %></span></h4>
-      </div>
-      <%= sanitize auto_link_urls(product.link_url) %>
-    </div>
+    <% @products.each do |product| %>
+        <div class="entry">
+          <%= image_tag(product.image_url) %>
+          <h3><%= product.name %></h3>
+
+          <h3><%= product.category %></h3>
+          <%= sanitize(product.description) %>
+          <div class="price_line">
+            <h4><span class="price"><%= number_to_currency(product.price, :unit =>'&euro;') %></span></h4>
+          </div>
+          <%= sanitize auto_link_urls(product.link_url) %>
+        </div>
 
 
     <% end %>
